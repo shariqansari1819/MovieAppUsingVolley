@@ -10,4 +10,5 @@ public class EndpointUrls {
     public static final String TOP_RATED_TV_URL = "https://api.themoviedb.org/3/tv/top_rated";
     public static final String VIDEO_MOVIE_URL = "https://api.themoviedb.org/3/movie/";
     public static final String VIDEO_TV_URL = "https://api.themoviedb.org/3/tv/";
+    public static final String MOVIE_SEARCH_URL = "https://api.themoviedb.org/3/search/movie";
 }

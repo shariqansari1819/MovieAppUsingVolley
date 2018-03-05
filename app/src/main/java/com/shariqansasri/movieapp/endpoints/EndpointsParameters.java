@@ -8,4 +8,6 @@ public interface EndpointsParameters {
     public static final String EMPERSAND = "&";
     public static final String LANGUAGE = "language";
     public static final String PAGE = "page";
+    public static final String QUERY = "query";
+    public static final String ADULT = "include_adult";
 }

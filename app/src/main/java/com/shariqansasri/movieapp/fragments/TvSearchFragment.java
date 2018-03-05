@@ -35,13 +35,13 @@ public class TvSearchFragment extends Fragment implements SearchActivity.OnTextS
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        SearchActivity searchActivity = (SearchActivity) getActivity();
-        if (searchActivity != null)
-            searchActivity.setSearchListener(this);
+//        SearchActivity searchActivity = (SearchActivity) getActivity();
+//        if (searchActivity != null)
+//            searchActivity.setSearchListener(this);
     }
 
     @Override
     public void getSearchText(String text) {
-        Toast.makeText(getActivity(), text, Toast.LENGTH_SHORT).show();
+//        Toast.makeText(getActivity(), text, Toast.LENGTH_SHORT).show();
     }
 }

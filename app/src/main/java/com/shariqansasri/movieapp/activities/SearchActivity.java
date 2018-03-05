@@ -82,10 +82,8 @@ public class SearchActivity extends AppCompatActivity implements TextView.OnEdit
 
     @Override
     public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-        if (!TextUtils.isEmpty(charSequence.toString())) {
-            if (onTextSearchGetListener != null) {
-                onTextSearchGetListener.getSearchText(charSequence.toString().trim());
-            }
+        if (onTextSearchGetListener != null) {
+            onTextSearchGetListener.getSearchText(charSequence.toString().trim());
         }
     }
 
