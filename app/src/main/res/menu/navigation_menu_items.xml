@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuHeaderMovies"
+        android:title="@string/movies">
+        <menu>
+            <item
+                android:id="@+id/menuItemUpcomingMovies"
+                android:title="@string/upcoming_movies"
+                android:icon="@drawable/upcoming"/>
+            <item
+                android:id="@+id/menuItemPopularMovies"
+                android:title="@string/popular_movies"
+                android:icon="@drawable/popular"/>
+            <item
+                android:id="@+id/menuItemTopRatedMovies"
+                android:title="@string/top_rated_movies"
+                android:icon="@drawable/rated"/>
+            <item
+                android:id="@+id/menuItemLatestMovies"
+                android:title="@string/latest_movies"
+                android:icon="@drawable/latest"/>
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menuHeaderTv"
+        android:title="@string/tv_shows">
+        <menu>
+            <item
+                android:id="@+id/menuItemLatestTv"
+                android:title="@string/latest_tv_shows"
+                android:icon="@drawable/latest"/>
+            <item
+                android:id="@+id/menuItemPopularTv"
+                android:title="@string/popular_tv_shows"
+                android:icon="@drawable/popular"/>
+            <item
+                android:id="@+id/menuItemTopRatedTv"
+                android:title="@string/top_rated_tv_shows"
+                android:icon="@drawable/rated" />
+        </menu>
+    </item>
+
+</menu>

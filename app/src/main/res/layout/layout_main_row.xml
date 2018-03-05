@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardViewRoundedImage"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@android:color/white"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="4dp">
+
+            <ImageView
+                android:id="@+id/imageViewThumbnailHomeRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:contentDescription="@string/movie_thumbnail"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zootopia_thumbnail" />
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/textViewMovieTitleHomeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/cardViewRoundedImage"
+            android:layout_alignTop="@+id/cardViewRoundedImage"
+            android:text="Zootopia"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMovieYearHomeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/cardViewRoundedImage"
+            android:layout_below="@+id/textViewMovieTitleHomeRow"
+            android:text="2016"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="14sp"
+            android:textStyle="normal" />
+
+        <View
+            android:id="@+id/dividerHomRow"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="4dp"
+            android:layout_toEndOf="@+id/cardViewRoundedImage"
+            android:layout_below="@+id/textViewMovieYearHomeRow"
+            android:background="@color/colorDivider" />
+
+        <ImageView
+            android:id="@+id/imageViewPopcornHomeRow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/cardViewRoundedImage"
+            android:layout_below="@+id/dividerHomRow"
+            android:contentDescription="@string/popcorn_icon"
+            android:src="@drawable/popcorn_icon" />
+
+        <TextView
+            android:id="@+id/textViewMovieRatingHomeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/imageViewPopcornHomeRow"
+            android:layout_below="@+id/dividerHomRow"
+            android:layout_alignTop="@+id/imageViewPopcornHomeRow"
+            android:layout_alignBottom="@+id/imageViewPopcornHomeRow"
+            android:gravity="center"
+            android:text="90%"
+            android:textColor="@color/colorDarkGrey"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewMovieAudienceHomeRow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/textViewMovieRatingHomeRow"
+            android:layout_alignStart="@+id/imageViewPopcornHomeRow"
+            android:gravity="center"
+            android:text="Audience Voting"
+            android:textColor="@color/colorLightGrey"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView
+            android:id="@+id/youtubePlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.pierfrancescosoffritti.youtubeplayer.player.YouTubePlayerView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/more_information"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayoutDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/colorBlack"
+            app:tabTextColor="@color/colorLightGrey" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPagerDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</RelativeLayout>
